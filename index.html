@@ -1,0 +1,64 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<title>Danny Lopez Test Sample</title>
+		<style>
+			html, body{
+				width:100%;
+				margin:0;
+				padding:0;
+			}
+
+			.container{
+				display:inline-block;
+				margin:0px 20px;
+			}
+
+			.txt-error{
+				border:1px solid #fa0000;
+				color:#fa0000;
+			}
+
+			.failed{
+				color:#fa0000;
+			}
+
+			.successful{
+				color:green;
+			}
+
+			.processing{
+				color:#ff7034;
+			}
+
+			form > input{
+				margin-bottom:10px;
+				height:30px;
+				width:250px;
+			}
+
+			input[type="button"]{
+				background-color:#0698c5;
+				color:#fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h4>This is a form to test the Javascript form validation function</h4>
+			<br>
+			<div id="status-message-wrapper"><span>Status message</span></div>
+			<br>
+			<form>
+				<input id="fname-txt" type="text" name="fname" placeholder="Firstname (required)"><br>
+				<input id="lname-txt" type="text" name="fname" placeholder="Lastname (required)"><br>
+				<input id="email-txt" type="text" name="email" placeholder="Email (required)"><br>
+				<input id="time-txt" type="text" name="time" placeholder="Time e.g 7pm, 7:30pm, 19:30 (optional)"><br>
+				<input type="button" name="submit-btn" value="Validate" onclick="validateEntryForm()">
+			</form>
+		</div>
+		<script type="text/javascript" src="functions.js"></script>
+	</body>
+</html>
